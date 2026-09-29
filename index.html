@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description" content="Elena Sibaja. Acompañamiento fonoaudiológico con enfoque en evidencia y acompañamiento familiar.">
+
 <title>Elena Sibaja | Acompañamiento fonoaudiológico</title>
 
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
@@ -16,11 +24,16 @@ body{
   background:#fff;
   line-height:1.6;
 }
-a{color:inherit}
+
+a{
+  color:inherit;
+}
+
 .container{
   width:min(1100px,92%);
   margin:auto;
 }
+
 header{
   position:sticky;
   top:0;
@@ -28,6 +41,7 @@ header{
   background:#fff;
   border-bottom:1px solid #ddd;
 }
+
 .nav{
   min-height:75px;
   display:flex;
@@ -35,37 +49,49 @@ header{
   justify-content:space-between;
   gap:25px;
 }
+
 .brand{
   text-decoration:none;
 }
+
 .brand strong{
   display:block;
   letter-spacing:.12em;
   font-size:18px;
 }
+
 .brand small{
   color:#b00020;
   letter-spacing:.1em;
 }
+
 nav{
   display:flex;
   gap:20px;
   flex-wrap:wrap;
 }
+
 nav a{
   text-decoration:none;
   font-size:14px;
 }
+
+nav a:hover{
+  color:#b00020;
+}
+
 .hero{
   padding:100px 0;
   border-bottom:1px solid #ddd;
 }
+
 .hero-grid{
   display:grid;
   grid-template-columns:1.5fr .8fr;
   gap:60px;
   align-items:center;
 }
+
 .eyebrow{
   color:#b00020;
   text-transform:uppercase;
@@ -73,5 +99,321 @@ nav a{
   font-weight:bold;
   font-size:12px;
 }
+
 h1{
-  font-size:clamp(42px,7vw,78
+  font-size:clamp(42px,7vw,78px);
+  line-height:1.02;
+  margin:18px 0 25px;
+  max-width:850px;
+}
+
+h2{
+  font-size:clamp(30px,4vw,48px);
+  line-height:1.1;
+  margin:0 0 20px;
+}
+
+h3{
+  margin-top:0;
+  font-size:22px;
+}
+
+p{
+  font-size:17px;
+}
+
+.hero p{
+  max-width:700px;
+}
+
+.button{
+  display:inline-block;
+  margin-top:15px;
+  padding:13px 22px;
+  background:#151515;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.button:hover{
+  background:#b00020;
+}
+
+section{
+  padding:85px 0;
+  border-bottom:1px solid #ddd;
+}
+
+.intro{
+  max-width:760px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:40px;
+}
+
+.card{
+  border:1px solid #ddd;
+  padding:30px;
+}
+
+.card p{
+  font-size:16px;
+}
+
+.blog-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+  margin-top:40px;
+}
+
+.article{
+  border-top:4px solid #b00020;
+  border-bottom:1px solid #ddd;
+  padding:25px 0;
+}
+
+.article a{
+  font-weight:bold;
+  color:#b00020;
+  text-decoration:none;
+}
+
+.contact{
+  background:#151515;
+  color:#fff;
+}
+
+.contact .eyebrow{
+  color:#fff;
+}
+
+.contact a{
+  color:#fff;
+}
+
+footer{
+  padding:30px 0;
+  font-size:13px;
+}
+
+@media(max-width:760px){
+
+  .nav{
+    align-items:flex-start;
+    flex-direction:column;
+    padding:18px 0;
+  }
+
+  nav{
+    gap:12px;
+  }
+
+  .hero{
+    padding:65px 0;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  h1{
+    font-size:48px;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+  .cards,
+  .blog-list{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a class="brand" href="#inicio">
+      <strong>ELENA SIBAJA</strong>
+      <small>FONOAUDIOLOGÍA</small>
+    </a>
+
+    <nav>
+      <a href="#sobre-elena">Sobre Elena</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="eyebrow">Acompañamiento fonoaudiológico</div>
+
+      <h1>Estimular con intención cambia trayectorias.</h1>
+
+      <p>
+        Profesional en fonoaudiología con un enfoque en evidencia y acompañamiento familiar.
+      </p>
+
+      <a class="button" href="#servicios">
+        Conoce los servicios
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="sobre-elena">
+  <div class="container">
+
+    <div class="intro">
+      <div class="eyebrow">Sobre Elena</div>
+
+      <h2>Fonoaudiología con evidencia y acompañamiento familiar.</h2>
+
+      <p>
+        Comprender cómo se desarrolla la comunicación permite acompañar
+        de manera más clara y pertinente las necesidades de cada niño y su familia.
+      </p>
+
+      <p>
+        Este espacio reúne información, orientación y recursos relacionados
+        con el lenguaje y el desarrollo infantil, desde una mirada profesional,
+        cercana y fundamentada en evidencia.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="servicios">
+  <div class="container">
+
+    <div class="eyebrow">Servicios</div>
+
+    <h2>Un acompañamiento que parte de las necesidades reales.</h2>
+
+    <div class="cards">
+
+      <article class="card">
+        <h3>Valoración</h3>
+        <p>
+          Exploración del desarrollo de la comunicación y el lenguaje
+          para identificar necesidades y orientar los siguientes pasos.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Acompañamiento</h3>
+        <p>
+          Intervención y seguimiento con objetivos claros,
+          ajustados a las características y necesidades de cada caso.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Orientación familiar</h3>
+        <p>
+          Información y estrategias para comprender el desarrollo
+          y favorecer oportunidades de comunicación en la vida cotidiana.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="blog">
+  <div class="container">
+
+    <div class="eyebrow">Blog</div>
+
+    <h2>Información para comprender y acompañar mejor.</h2>
+
+    <div class="blog-list">
+
+      <article class="article">
+        <h3>
+          Estimular el lenguaje no es hacer ejercicios todo el día
+        </h3>
+
+        <p>
+          El desarrollo del lenguaje ocurre dentro de las interacciones
+          cotidianas. Acompañar también implica saber cómo y para qué intervenir.
+        </p>
+
+        <a href="#">
+          Leer artículo →
+        </a>
+      </article>
+
+
+      <article class="article">
+        <h3>
+          ¿Cuándo consultar por el lenguaje de un niño?
+        </h3>
+
+        <p>
+          Algunas diferencias forman parte de la variabilidad del desarrollo;
+          otras pueden indicar que es conveniente realizar una valoración.
+        </p>
+
+        <a href="#">
+          Leer artículo →
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="contact" id="contacto">
+  <div class="container">
+
+    <div class="eyebrow">Contacto</div>
+
+    <h2>Hablemos sobre lo que necesitas.</h2>
+
+    <p>
+      Si buscas orientación relacionada con lenguaje y desarrollo infantil,
+      puedes ponerte en contacto.
+    </p>
+
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    © Elena Sibaja · Acompañamiento fonoaudiológico
+  </div>
+</footer>
+
+</body>
+</html>
