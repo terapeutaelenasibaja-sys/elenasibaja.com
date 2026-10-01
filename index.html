@@ -4,22 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Elena Sibaja. Acompañamiento fonoaudiológico con un enfoque en evidencia y acompañamiento familiar.">
+<meta name="description" content="Elena Sibaja. Acompañamiento fonoaudiológico con enfoque en evidencia y acompañamiento familiar.">
 
 <title>Elena Sibaja | Acompañamiento fonoaudiológico</title>
 
 <style>
 :root{
-  --black:#151515;
-  --red:#b00020;
+  --red:#b5121b;
+  --black:#111111;
   --white:#ffffff;
-  --gray:#666666;
-  --light:#f5f5f5;
+  --soft:#f6f6f4;
   --line:#dedede;
+  --gray:#666666;
 }
 
 *{
   box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
@@ -27,11 +29,10 @@ html{
 }
 
 body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   color:var(--black);
   background:var(--white);
-  line-height:1.65;
+  line-height:1.6;
 }
 
 img{
@@ -41,22 +42,20 @@ img{
 
 a{
   color:inherit;
+  text-decoration:none;
 }
 
 .container{
-  width:min(1160px,92%);
+  width:min(1120px,92%);
   margin:auto;
 }
-
-/* HEADER */
 
 header{
   position:sticky;
   top:0;
-  z-index:100;
-  background:rgba(255,255,255,.97);
+  z-index:20;
+  background:rgba(255,255,255,.96);
   border-bottom:1px solid var(--line);
-  backdrop-filter:blur(10px);
 }
 
 .nav{
@@ -67,118 +66,116 @@ header{
   gap:30px;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  text-decoration:none;
-}
-
 .brand img{
-  width:155px;
+  width:175px;
   height:auto;
 }
 
 nav{
   display:flex;
+  align-items:center;
   gap:25px;
   flex-wrap:wrap;
 }
 
 nav a{
-  text-decoration:none;
   font-size:14px;
   font-weight:600;
-  position:relative;
 }
 
-nav a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-7px;
-  width:0;
-  height:2px;
-  background:var(--red);
-  transition:.25s ease;
+nav a:hover{
+  color:var(--red);
 }
 
-nav a:hover::after,
-nav a:focus::after{
-  width:100%;
+section{
+  padding:100px 0;
 }
-
-/* HERO */
 
 .hero{
   padding:90px 0 100px;
-  border-bottom:1px solid var(--line);
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns:1fr .82fr;
-  gap:80px;
+  grid-template-columns:1.05fr .95fr;
+  gap:70px;
   align-items:center;
 }
 
 .eyebrow{
   color:var(--red);
   text-transform:uppercase;
-  letter-spacing:.18em;
+  letter-spacing:.14em;
   font-size:12px;
-  font-weight:bold;
+  font-weight:700;
+  margin-bottom:18px;
 }
 
 h1{
-  font-size:clamp(45px,6vw,78px);
-  line-height:1.02;
-  letter-spacing:-.035em;
-  margin:18px 0 28px;
+  font-size:clamp(48px,6vw,78px);
+  line-height:.98;
+  letter-spacing:-.045em;
   max-width:760px;
 }
 
+h2{
+  font-size:clamp(36px,4vw,56px);
+  line-height:1.05;
+  letter-spacing:-.035em;
+  max-width:800px;
+}
+
+h3{
+  font-size:22px;
+  line-height:1.2;
+}
+
 .hero-copy{
-  max-width:650px;
-  font-size:19px;
+  margin-top:28px;
+  max-width:620px;
+  font-size:20px;
   color:#444;
 }
 
 .actions{
-  margin-top:30px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:34px;
 }
 
 .button{
   display:inline-block;
-  padding:14px 23px;
-  margin:0 10px 10px 0;
-  text-decoration:none;
-  font-weight:bold;
-  border:1px solid var(--black);
   background:var(--black);
   color:var(--white);
-  transition:.2s ease;
+  padding:15px 22px;
+  font-weight:700;
+  font-size:14px;
 }
 
-.button:hover,
-.button:focus{
+.button:hover{
   background:var(--red);
-  border-color:var(--red);
 }
 
 .button.secondary{
   background:var(--white);
   color:var(--black);
-}
-
-.button.secondary:hover,
-.button.secondary:focus{
-  background:var(--red);
-  color:var(--white);
+  border:1px solid var(--black);
 }
 
 .hero-photo{
   position:relative;
+}
+
+.hero-photo:after{
+  content:"";
+  position:absolute;
+  width:80px;
+  height:80px;
+  background:var(--red);
+  right:-20px;
+  bottom:-20px;
+  z-index:-1;
 }
 
 .hero-photo img{
@@ -188,269 +185,226 @@ h1{
   object-position:center;
 }
 
-.hero-photo::after{
-  content:"";
-  position:absolute;
-  width:72px;
-  height:72px;
-  right:-18px;
-  bottom:-18px;
-  background:var(--red);
-  z-index:-1;
+#sobre-elena{
+  background:var(--soft);
 }
-
-/* SECTIONS */
-
-section{
-  padding:100px 0;
-  border-bottom:1px solid var(--line);
-}
-
-h2{
-  font-size:clamp(34px,4vw,54px);
-  line-height:1.08;
-  letter-spacing:-.025em;
-  margin:12px 0 24px;
-  max-width:850px;
-}
-
-h3{
-  font-size:22px;
-  line-height:1.25;
-  margin:0 0 14px;
-}
-
-p{
-  font-size:17px;
-}
-
-.intro{
-  max-width:760px;
-  color:#4d4d4d;
-}
-
-/* ABOUT */
 
 .about-grid{
   display:grid;
-  grid-template-columns:1.1fr .9fr;
+  grid-template-columns:1fr 1fr;
   gap:80px;
   align-items:center;
 }
 
 .about-copy p{
-  color:#4b4b4b;
+  margin-top:22px;
+  color:#444;
+  max-width:650px;
 }
 
 .about-panel{
+  min-height:350px;
   background:var(--black);
   color:var(--white);
-  padding:50px;
-  min-height:360px;
   display:flex;
   align-items:flex-end;
+  padding:45px;
+  position:relative;
+}
+
+.about-panel:before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  width:90px;
+  height:90px;
+  background:var(--red);
 }
 
 .about-panel strong{
   display:block;
-  font-size:clamp(34px,4vw,52px);
-  line-height:1.04;
+  font-size:30px;
+  line-height:1.15;
+  max-width:400px;
 }
 
 .about-panel span{
   display:block;
-  margin-top:22px;
-  font-size:12px;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:#ddd;
+  margin-top:18px;
+  color:#ccc;
+  font-size:14px;
 }
 
-/* SERVICES */
+.intro{
+  max-width:700px;
+  margin-top:22px;
+  color:#555;
+}
 
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:22px;
-  margin-top:50px;
+  gap:20px;
+  margin-top:45px;
 }
 
 .card{
   border:1px solid var(--line);
-  padding:34px;
-  min-height:310px;
-  transition:.2s ease;
-}
-
-.card:hover{
-  transform:translateY(-4px);
-  border-color:#999;
+  padding:35px;
+  min-height:300px;
 }
 
 .card-number{
   color:var(--red);
-  font-size:11px;
-  font-weight:bold;
-  letter-spacing:.16em;
-  margin-bottom:42px;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:50px;
 }
 
 .card p{
-  color:#555;
-  font-size:16px;
+  margin-top:16px;
+  color:var(--gray);
 }
 
-/* BLOG */
+#blog{
+  background:var(--soft);
+}
 
 .blog-intro{
   display:flex;
   justify-content:space-between;
   align-items:end;
-  gap:40px;
+  gap:30px;
 }
 
 .blog-list{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:22px;
-  margin-top:50px;
+  gap:20px;
+  margin-top:45px;
 }
 
 .article{
-  border:1px solid var(--line);
   background:var(--white);
-  display:flex;
-  flex-direction:column;
+  border:1px solid var(--line);
 }
 
 .article-top{
+  height:100px;
   background:var(--black);
-  color:var(--white);
-  min-height:150px;
-  padding:28px;
   display:flex;
   align-items:flex-end;
+  padding:20px;
 }
 
 .article-number{
-  color:#fff;
-  font-size:11px;
-  letter-spacing:.15em;
+  color:var(--white);
+  font-size:12px;
   text-transform:uppercase;
+  letter-spacing:.12em;
 }
 
 .article-content{
   padding:30px;
-  flex:1;
-  display:flex;
-  flex-direction:column;
 }
 
 .article-content p{
-  color:#555;
-  font-size:15px;
+  margin-top:15px;
+  color:var(--gray);
 }
 
 .article-link{
   display:inline-block;
-  margin-top:auto;
-  padding-top:18px;
+  margin-top:25px;
   color:var(--red);
-  text-decoration:none;
-  font-weight:bold;
+  font-weight:700;
+  font-size:14px;
 }
-
-/* RESOURCES */
 
 .resources-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:22px;
-  margin-top:50px;
+  gap:20px;
+  margin-top:45px;
 }
 
 .resource{
-  border:1px solid var(--line);
-  padding:34px;
-  min-height:300px;
+  border-top:4px solid var(--black);
+  padding:30px;
+  background:var(--soft);
+  min-height:260px;
 }
 
 .resource-label{
   color:var(--red);
-  font-size:11px;
-  font-weight:bold;
-  letter-spacing:.15em;
+  font-size:12px;
   text-transform:uppercase;
-  margin-bottom:40px;
+  letter-spacing:.1em;
+  font-weight:700;
+  margin-bottom:35px;
 }
 
 .resource p{
-  color:#555;
-  font-size:15px;
+  margin-top:15px;
+  color:var(--gray);
 }
 
 .resource-status{
   display:inline-block;
-  margin-top:18px;
-  padding:9px 13px;
-  border:1px solid var(--line);
+  margin-top:25px;
   font-size:12px;
-  font-weight:bold;
+  font-weight:700;
+  text-transform:uppercase;
 }
-
-/* CONTACT */
 
 .contact{
   background:var(--black);
-  color:var(--white);
-  border-bottom:none;
-}
-
-.contact .eyebrow{
   color:var(--white);
 }
 
 .contact-grid{
   display:grid;
-  grid-template-columns:1fr .8fr;
+  grid-template-columns:1fr 1fr;
   gap:80px;
   align-items:center;
 }
 
+.contact .eyebrow{
+  color:#fff;
+}
+
 .contact p{
-  color:#ddd;
-  max-width:620px;
+  margin-top:22px;
+  color:#ccc;
+  max-width:600px;
 }
 
 .contact-links{
-  display:grid;
-  gap:12px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:14px;
 }
 
 .contact-links a{
-  display:block;
-  padding:15px 18px;
-  border:1px solid #555;
-  text-decoration:none;
-  transition:.2s ease;
+  font-size:20px;
+  font-weight:700;
 }
 
-.contact-links a:hover,
-.contact-links a:focus{
-  background:var(--red);
-  border-color:var(--red);
+.contact-links a:hover{
+  color:var(--red);
 }
 
 .contact-links .primary{
-  background:var(--white);
-  color:var(--black);
-  border-color:var(--white);
-  font-weight:bold;
+  background:var(--red);
+  color:var(--white);
+  padding:15px 24px;
 }
 
-/* FOOTER */
-
 footer{
+  background:var(--white);
+  border-top:1px solid var(--line);
   padding:35px 0;
 }
 
@@ -458,8 +412,7 @@ footer{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:30px;
-  flex-wrap:wrap;
+  gap:25px;
 }
 
 .footer-logo{
@@ -467,37 +420,33 @@ footer{
 }
 
 .footer-text{
-  color:#666;
   font-size:13px;
+  color:#666;
 }
-
-/* MOBILE */
 
 @media(max-width:850px){
 
   .nav{
+    min-height:70px;
     flex-direction:column;
-    align-items:flex-start;
-    padding:18px 0;
+    justify-content:center;
+    padding:15px 0;
   }
 
   nav{
-    gap:12px 18px;
+    justify-content:center;
+    gap:14px;
   }
 
   .hero{
-    padding:65px 0 75px;
+    padding-top:60px;
   }
 
   .hero-grid,
   .about-grid,
   .contact-grid{
     grid-template-columns:1fr;
-    gap:40px;
-  }
-
-  .hero-photo img{
-    aspect-ratio:4/5;
+    gap:45px;
   }
 
   .cards,
@@ -507,3 +456,319 @@ footer{
   }
 
   section{
+    padding:70px 0;
+  }
+
+  .blog-intro{
+    display:block;
+  }
+
+  h1{
+    font-size:clamp(42px,13vw,62px);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a class="brand" href="#inicio">
+      <img src="logo-elena-sibaja.jpeg" alt="Elena Sibaja. Acompañamiento fonoaudiológico.">
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-elena">Sobre Elena</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#blog">Blog</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="eyebrow">Acompañamiento fonoaudiológico</div>
+
+      <h1>Estimular con intención cambia trayectorias.</h1>
+
+      <p class="hero-copy">
+        Profesional en fonoaudiología con un enfoque en evidencia y acompañamiento familiar.
+      </p>
+
+      <div class="actions">
+        <a class="button" href="#servicios">Conoce los servicios</a>
+        <a class="button secondary" href="#blog">Leer artículos</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="elena-sibaja-profesional.jpeg" alt="Elena Sibaja, profesional en fonoaudiología">
+    </div>
+
+  </div>
+</section>
+
+<section id="sobre-elena">
+  <div class="container about-grid">
+
+    <div class="about-copy">
+      <div class="eyebrow">Sobre Elena</div>
+
+      <h2>Fonoaudiología con evidencia y acompañamiento familiar.</h2>
+
+      <p>
+        Comprender cómo se desarrolla la comunicación permite acompañar de manera más clara y pertinente las necesidades de cada niño y su familia.
+      </p>
+
+      <p>
+        Este espacio reúne información, orientación y recursos relacionados con el lenguaje y el desarrollo infantil, desde una mirada profesional, cercana y fundamentada en evidencia.
+      </p>
+    </div>
+
+    <div class="about-panel">
+      <div>
+        <strong>
+          Información para comprender.<br>
+          Acompañamiento para actuar.
+        </strong>
+
+        <span>
+          Lenguaje · comunicación · desarrollo infantil
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+
+    <div class="eyebrow">Servicios</div>
+
+    <h2>Acompañamiento profesional con objetivos claros.</h2>
+
+    <p class="intro">
+      La valoración, la intervención y la orientación familiar pueden formar parte de un proceso ajustado a las características y necesidades de cada caso.
+    </p>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-number">01</div>
+        <h3>Valoración</h3>
+        <p>
+          Exploración del desarrollo de la comunicación y el lenguaje para identificar necesidades y orientar los siguientes pasos.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">02</div>
+        <h3>Acompañamiento</h3>
+        <p>
+          Intervención y seguimiento con objetivos claros, ajustados a las características y necesidades de cada caso.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">03</div>
+        <h3>Orientación familiar</h3>
+        <p>
+          Información y estrategias para comprender el desarrollo y favorecer oportunidades de comunicación en la vida cotidiana.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="blog">
+  <div class="container">
+
+    <div class="blog-intro">
+      <div>
+        <div class="eyebrow">Blog</div>
+
+        <h2>
+          Información para comprender el desarrollo del lenguaje.
+        </h2>
+      </div>
+    </div>
+
+    <div class="blog-list">
+
+      <article class="article">
+        <div class="article-top">
+          <div class="article-number">Artículo 01</div>
+        </div>
+
+        <div class="article-content">
+          <h3>Desarrollo, comunicación y lenguaje infantil</h3>
+
+          <p>
+            Una mirada al desarrollo de la comunicación y el lenguaje durante la infancia.
+          </p>
+
+          <a class="article-link" href="articulo-desarrollo-comunicacion-lenguaje-infantil.docx">
+            Abrir artículo →
+          </a>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="article-top">
+          <div class="article-number">Artículo 02</div>
+        </div>
+
+        <div class="article-content">
+          <h3>Señales de alerta del lenguaje infantil</h3>
+
+          <p>
+            Información para reconocer señales que pueden orientar la necesidad de consultar.
+          </p>
+
+          <a class="article-link" href="articulo-senales-alerta-lenguaje-infantil.docx">
+            Abrir artículo →
+          </a>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="article-top">
+          <div class="article-number">Artículo 03</div>
+        </div>
+
+        <div class="article-content">
+          <h3>Lectura compartida y lenguaje infantil</h3>
+
+          <p>
+            El valor de compartir libros
+            </p>
+
+        <a class="article-link" href="articulo-lectura-compartida-lenguaje-infantil.docx">
+          Abrir artículo →
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+</div>
+</section>
+
+<section id="recursos">
+  <div class="container">
+
+    <div class="eyebrow">Recursos</div>
+
+    <h2>Materiales para acompañar el desarrollo.</h2>
+
+    <p class="intro">
+      Próximamente encontrarás aquí materiales educativos y recursos digitales desarrollados para familias y profesionales.
+    </p>
+
+    <div class="resources-grid">
+
+      <article class="resource">
+        <div class="resource-label">Recurso 01</div>
+
+        <h3>¿Debo preocuparme por el lenguaje de mi hijo?</h3>
+
+        <p>
+          Guía de orientación para comprender algunas señales del desarrollo del lenguaje.
+        </p>
+
+        <span class="resource-status">Próximamente</span>
+      </article>
+
+      <article class="resource">
+        <div class="resource-label">Recurso 02</div>
+
+        <h3>Estimulación del lenguaje en casa</h3>
+
+        <p>
+          Material educativo para favorecer oportunidades de comunicación en la vida cotidiana.
+        </p>
+
+        <span class="resource-status">Próximamente</span>
+      </article>
+
+      <article class="resource">
+        <div class="resource-label">Recurso 03</div>
+
+        <h3>Artículos y contenidos educativos</h3>
+
+        <p>
+          Consulta los contenidos disponibles sobre lenguaje, comunicación y desarrollo infantil.
+        </p>
+
+        <a class="article-link" href="#blog">
+          Ver artículos →
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section><section id="contacto" class="contact">
+  <div class="container contact-grid">
+
+    <div>
+      <div class="eyebrow">Contacto</div>
+
+      <h2>Hablemos sobre el siguiente paso.</h2>
+
+      <p>
+        Para solicitar información sobre valoración, acompañamiento u orientación, puedes comunicarte directamente.
+      </p>
+    </div>
+
+    <div class="contact-links">
+
+      <a class="primary" href="https://wa.me/525585185289" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+
+      <a href="tel:+525585185289">
+        55 8518 5289
+      </a>
+
+      <a href="https://www.instagram.com/fga.elenasibajaantonio/" target="_blank" rel="noopener">
+        Instagram
+      </a>
+
+      <a href="https://www.youtube.com/@elenasibajaantonio" target="_blank" rel="noopener">
+        YouTube
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+
+    <img class="footer-logo" src="logo-elena-sibaja.jpeg" alt="Elena Sibaja">
+
+    <div class="footer-text">
+      Estimular con intención cambia trayectorias.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
