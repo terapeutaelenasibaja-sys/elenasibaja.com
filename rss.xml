@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Elena Sibaja</title>
+    <link>https://elenasibaja.com/</link>
+    <description>Artículos sobre comunicación y lenguaje infantil de Fga. Elena Sibaja.</description>
+    <language>es-MX</language>
+    <item>
+      <title>Lectura compartida y lenguaje infantil</title>
+      <link>https://elenasibaja.com/articulo-lectura-compartida-lenguaje-infantil.html</link>
+      <guid>https://elenasibaja.com/articulo-lectura-compartida-lenguaje-infantil.html</guid>
+    </item>
+    <item>
+      <title>Señales de alerta en el desarrollo del lenguaje infantil</title>
+      <link>https://elenasibaja.com/articulo-senales-alerta-lenguaje-infantil.html</link>
+      <guid>https://elenasibaja.com/articulo-senales-alerta-lenguaje-infantil.html</guid>
+    </item>
+    <item>
+      <title>Desarrollo de la comunicación y el lenguaje infantil</title>
+      <link>https://elenasibaja.com/desarrollo-comunicacion-lenguaje-infantil-primeros-meses.html</link>
+      <guid>https://elenasibaja.com/desarrollo-comunicacion-lenguaje-infantil-primeros-meses.html</guid>
+    </item>
+  </channel>
+</rss>
